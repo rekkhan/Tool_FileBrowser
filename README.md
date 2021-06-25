@@ -1,13 +1,13 @@
 # Tool_FileBrowser
 ## What is it
-Browse files in a path that contains the curly braces "{ }". Cpp doesn't seem to support it.
+A utility that browses files from a given path that may contain the curly braces "{ }", return the list of files as a vector<string>
 
-This one is written mainly for ROOT users.
+Written mainly for ROOT users. People using TreeReader can use this package as TreeReader supports vector<string> as argument.
 ## How to use?
 1. Include it in your c/cpp code.
 2. The return value is vector<string>, so do somthing like:
   
-  ```c
+  ```
   vector<string>  mypaths = fileBrowser (path_template, file_extension)
   ```
   
