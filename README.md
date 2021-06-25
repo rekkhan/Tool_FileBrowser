@@ -5,8 +5,10 @@ A utility that browses files from a given path that may contain the curly braces
 Written mainly for ROOT users. People using TreeReader can use this package as TreeReader supports vector<string> as argument.
 ## How to use?
 1. Include it in your c/cpp code.
-2. The return value is vector<string>, so do somthing like:
-  
+  ```
+  #include "fileBrowser.h"
+  ```
+2. The return value is vector<string>, so do somthing like:  
   ```
   vector<string>  mypaths = fileBrowser (path_template, file_extension)
   ```
